@@ -12,9 +12,11 @@
 		58D1DC231F71501C008436F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC211F71501C008436F3 /* Main.storyboard */; };
 		58D1DC251F71501C008436F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC241F71501C008436F3 /* Assets.xcassets */; };
 		58D1DC281F71501C008436F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC261F71501C008436F3 /* LaunchScreen.storyboard */; };
+		8D943798D667D494D168372C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
 		58D1DC1A1F71501C008436F3 /* smackapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smackapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D1DC1D1F71501C008436F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D1DC1F1F71501C008436F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,11 @@
 		58D1DC241F71501C008436F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D1DC271F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D1DC291F71501C008436F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		58D1DC311F71868F008436F3 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		58D1DC321F71868F008436F3 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8569EB96E94F3AEF1A680505 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D943798D667D494D168372C /* Pods_smackapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE8BCCCB696757D5A6BBE53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8569EB96E94F3AEF1A680505 /* Pods-smackapp.debug.xcconfig */,
+				3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		41488BF2A7004EF2A75C935E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58D1DC111F71501C008436F3 = {
 			isa = PBXGroup;
 			children = (
 				58D1DC1C1F71501C008436F3 /* smackapp */,
 				58D1DC1B1F71501C008436F3 /* Products */,
+				0FE8BCCCB696757D5A6BBE53 /* Pods */,
+				41488BF2A7004EF2A75C935E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +81,7 @@
 		58D1DC1C1F71501C008436F3 /* smackapp */ = {
 			isa = PBXGroup;
 			children = (
+				58D1DC2F1F718629008436F3 /* SupportingFiles */,
 				58D1DC1D1F71501C008436F3 /* AppDelegate.swift */,
 				58D1DC1F1F71501C008436F3 /* ViewController.swift */,
 				58D1DC211F71501C008436F3 /* Main.storyboard */,
@@ -64,6 +92,16 @@
 			path = smackapp;
 			sourceTree = "<group>";
 		};
+		58D1DC2F1F718629008436F3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				58D1DC311F71868F008436F3 /* SWRevealViewController.h */,
+				58D1DC321F71868F008436F3 /* SWRevealViewController.m */,
+				58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58D1DC2C1F71501C008436F3 /* Build configuration list for PBXNativeTarget "smackapp" */;
 			buildPhases = (
+				88DE6D497E2682A51C77C287 /* [CP] Check Pods Manifest.lock */,
 				58D1DC161F71501C008436F3 /* Sources */,
 				58D1DC171F71501C008436F3 /* Frameworks */,
 				58D1DC181F71501C008436F3 /* Resources */,
+				D721C1D2FE1C9215EA656ACB /* [CP] Embed Pods Frameworks */,
+				5280B95D30A52072A54DA40F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					58D1DC191F71501C008436F3 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -129,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5280B95D30A52072A54DA40F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smackapp/Pods-smackapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DE6D497E2682A51C77C287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D721C1D2FE1C9215EA656ACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smackapp/Pods-smackapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D1DC161F71501C008436F3 /* Sources */ = {
@@ -271,13 +361,17 @@
 		};
 		58D1DC2D1F71501C008436F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8569EB96E94F3AEF1A680505 /* Pods-smackapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8NUSB2K2KQ;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tapiwajiri.smackapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smackapp/SupportingFiles/smackapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,13 +379,16 @@
 		};
 		58D1DC2E1F71501C008436F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8NUSB2K2KQ;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tapiwajiri.smackapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "smackapp/SupportingFiles/smackapp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
