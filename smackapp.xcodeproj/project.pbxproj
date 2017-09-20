@@ -10,6 +10,7 @@
 		58BFB6ED1F72F7DE009EDAF6 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */; };
 		58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */; };
 		58BFB6F01F72F9BE009EDAF6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC321F71868F008436F3 /* SWRevealViewController.m */; };
+		58BFB6F41F72FF10009EDAF6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6F31F72FF10009EDAF6 /* GradientView.swift */; };
 		58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC1D1F71501C008436F3 /* AppDelegate.swift */; };
 		58D1DC231F71501C008436F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC211F71501C008436F3 /* Main.storyboard */; };
 		58D1DC251F71501C008436F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC241F71501C008436F3 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
 		58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		58BFB6F31F72FF10009EDAF6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		58D1DC1A1F71501C008436F3 /* smackapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smackapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D1DC1D1F71501C008436F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D1DC221F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		58BFB6EA1F72F7A6009EDAF6 /* View.1 */ = {
 			isa = PBXGroup;
 			children = (
+				58BFB6F31F72FF10009EDAF6 /* GradientView.swift */,
 			);
 			path = View.1;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				58BFB6ED1F72F7DE009EDAF6 /* ChatVC.swift in Sources */,
 				58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */,
+				58BFB6F41F72FF10009EDAF6 /* GradientView.swift in Sources */,
 				58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */,
 				58BFB6F01F72F9BE009EDAF6 /* SWRevealViewController.m in Sources */,
 			);
