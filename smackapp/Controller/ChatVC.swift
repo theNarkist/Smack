@@ -13,10 +13,10 @@ class ChatVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
     }
 
-    
+   
 
 }

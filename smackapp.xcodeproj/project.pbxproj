@@ -11,8 +11,9 @@
 		58D1DC231F71501C008436F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC211F71501C008436F3 /* Main.storyboard */; };
 		58D1DC251F71501C008436F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC241F71501C008436F3 /* Assets.xcassets */; };
 		58D1DC281F71501C008436F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC261F71501C008436F3 /* LaunchScreen.storyboard */; };
-		58DCC67F1F729AF400FC537C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCC67E1F729AF400FC537C /* ChatVC.swift */; };
 		58DCC6811F729B0F00FC537C /* ChannelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCC6801F729B0F00FC537C /* ChannelsVC.swift */; };
+		58DCC6871F72B71F00FC537C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DCC67E1F729AF400FC537C /* ChatVC.swift */; };
+		58DCC6881F72B73200FC537C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DCC6851F72B21700FC537C /* SWRevealViewController.m */; };
 		8D943798D667D494D168372C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,11 +25,11 @@
 		58D1DC241F71501C008436F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D1DC271F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D1DC291F71501C008436F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackapp-Bridging-Header.h"; sourceTree = "<group>"; };
-		58D1DC311F71868F008436F3 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		58D1DC321F71868F008436F3 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		58DCC67E1F729AF400FC537C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		58DCC6801F729B0F00FC537C /* ChannelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsVC.swift; sourceTree = "<group>"; };
+		58DCC6841F72B21700FC537C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		58DCC6851F72B21700FC537C /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		58DCC6861F72B29500FC537C /* smackapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8569EB96E94F3AEF1A680505 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,9 +100,9 @@
 		58D1DC2F1F718629008436F3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				58D1DC311F71868F008436F3 /* SWRevealViewController.h */,
-				58D1DC321F71868F008436F3 /* SWRevealViewController.m */,
-				58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */,
+				58DCC6841F72B21700FC537C /* SWRevealViewController.h */,
+				58DCC6851F72B21700FC537C /* SWRevealViewController.m */,
+				58DCC6861F72B29500FC537C /* smackapp-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -252,9 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58DCC67F1F729AF400FC537C /* ChatVC.swift in Sources */,
+				58DCC6871F72B71F00FC537C /* ChatVC.swift in Sources */,
 				58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */,
 				58DCC6811F729B0F00FC537C /* ChannelsVC.swift in Sources */,
+				58DCC6881F72B73200FC537C /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +312,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -367,6 +370,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
