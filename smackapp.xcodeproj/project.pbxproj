@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC1D1F71501C008436F3 /* AppDelegate.swift */; };
-		58D1DC201F71501C008436F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC1F1F71501C008436F3 /* ViewController.swift */; };
 		58D1DC231F71501C008436F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC211F71501C008436F3 /* Main.storyboard */; };
 		58D1DC251F71501C008436F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC241F71501C008436F3 /* Assets.xcassets */; };
 		58D1DC281F71501C008436F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC261F71501C008436F3 /* LaunchScreen.storyboard */; };
+		58D1DC371F7275BC008436F3 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC361F7275BC008436F3 /* ChatVC.swift */; };
+		58D1DC391F7275CE008436F3 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC381F7275CE008436F3 /* ChannelVC.swift */; };
 		8D943798D667D494D168372C /* Pods_smackapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,7 +20,6 @@
 		3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
 		58D1DC1A1F71501C008436F3 /* smackapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smackapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D1DC1D1F71501C008436F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58D1DC1F1F71501C008436F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58D1DC221F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58D1DC241F71501C008436F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D1DC271F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +27,8 @@
 		58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		58D1DC311F71868F008436F3 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		58D1DC321F71868F008436F3 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		58D1DC361F7275BC008436F3 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		58D1DC381F7275CE008436F3 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smackapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8569EB96E94F3AEF1A680505 /* Pods-smackapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,9 +83,11 @@
 		58D1DC1C1F71501C008436F3 /* smackapp */ = {
 			isa = PBXGroup;
 			children = (
+				58D1DC351F72758D008436F3 /* Model */,
+				58D1DC341F727587008436F3 /* View */,
+				58D1DC331F72757B008436F3 /* Controller */,
 				58D1DC2F1F718629008436F3 /* SupportingFiles */,
 				58D1DC1D1F71501C008436F3 /* AppDelegate.swift */,
-				58D1DC1F1F71501C008436F3 /* ViewController.swift */,
 				58D1DC211F71501C008436F3 /* Main.storyboard */,
 				58D1DC241F71501C008436F3 /* Assets.xcassets */,
 				58D1DC261F71501C008436F3 /* LaunchScreen.storyboard */,
@@ -100,6 +104,29 @@
 				58D1DC301F71868E008436F3 /* smackapp-Bridging-Header.h */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		58D1DC331F72757B008436F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58D1DC361F7275BC008436F3 /* ChatVC.swift */,
+				58D1DC381F7275CE008436F3 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58D1DC341F727587008436F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58D1DC351F72758D008436F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D1DC201F71501C008436F3 /* ViewController.swift in Sources */,
+				58D1DC371F7275BC008436F3 /* ChatVC.swift in Sources */,
+				58D1DC391F7275CE008436F3 /* ChannelVC.swift in Sources */,
 				58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +283,7 @@
 		58D1DC2A1F71501C008436F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -282,6 +311,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -301,17 +331,20 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Debug;
 		};
 		58D1DC2B1F71501C008436F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -339,6 +372,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -352,9 +386,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -366,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8NUSB2K2KQ;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tapiwajiri.smackapp;
@@ -384,6 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8NUSB2K2KQ;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = smackapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Tapiwajiri.smackapp;
