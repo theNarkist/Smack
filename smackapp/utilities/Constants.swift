@@ -11,3 +11,6 @@ import Foundation
 // segues
 
 let TO_LOGIN = "toLogin"
+let TO_NEW_ACCOUNT = "toCreateAccount"
+let BACK_TO_CHANNEL_VC = "backToChannelVC"
+let TO_CHANNEL_VC = "toCHannelVC"
