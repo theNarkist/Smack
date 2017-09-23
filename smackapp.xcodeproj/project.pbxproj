@@ -11,6 +11,8 @@
 		58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */; };
 		58BFB6F01F72F9BE009EDAF6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC321F71868F008436F3 /* SWRevealViewController.m */; };
 		58BFB6F41F72FF10009EDAF6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6F31F72FF10009EDAF6 /* GradientView.swift */; };
+		58BFB6F71F768FA6009EDAF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6F61F768FA6009EDAF6 /* Constants.swift */; };
+		58BFB6F91F7695FA009EDAF6 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6F81F7695FA009EDAF6 /* loginVC.swift */; };
 		58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC1D1F71501C008436F3 /* AppDelegate.swift */; };
 		58D1DC231F71501C008436F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC211F71501C008436F3 /* Main.storyboard */; };
 		58D1DC251F71501C008436F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D1DC241F71501C008436F3 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 		58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		58BFB6F31F72FF10009EDAF6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		58BFB6F61F768FA6009EDAF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58BFB6F81F7695FA009EDAF6 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		58D1DC1A1F71501C008436F3 /* smackapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smackapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D1DC1D1F71501C008436F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D1DC221F71501C008436F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			children = (
 				58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */,
 				58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */,
+				58BFB6F81F7695FA009EDAF6 /* loginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +92,14 @@
 			children = (
 			);
 			path = Model.1;
+			sourceTree = "<group>";
+		};
+		58BFB6F51F768F85009EDAF6 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				58BFB6F61F768FA6009EDAF6 /* Constants.swift */,
+			);
+			path = utilities;
 			sourceTree = "<group>";
 		};
 		58D1DC111F71501C008436F3 = {
@@ -110,6 +123,7 @@
 		58D1DC1C1F71501C008436F3 /* smackapp */ = {
 			isa = PBXGroup;
 			children = (
+				58BFB6F51F768F85009EDAF6 /* utilities */,
 				58BFB6EB1F72F7BA009EDAF6 /* Model.1 */,
 				58BFB6EA1F72F7A6009EDAF6 /* View.1 */,
 				58BFB6E81F72F760009EDAF6 /* Controller */,
@@ -259,8 +273,10 @@
 				58BFB6ED1F72F7DE009EDAF6 /* ChatVC.swift in Sources */,
 				58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */,
 				58BFB6F41F72FF10009EDAF6 /* GradientView.swift in Sources */,
+				58BFB6F91F7695FA009EDAF6 /* loginVC.swift in Sources */,
 				58D1DC1E1F71501C008436F3 /* AppDelegate.swift in Sources */,
 				58BFB6F01F72F9BE009EDAF6 /* SWRevealViewController.m in Sources */,
+				58BFB6F71F768FA6009EDAF6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
