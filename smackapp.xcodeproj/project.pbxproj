@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58AE948A1F77A9A300D5E9DC /* authService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE94891F77A9A200D5E9DC /* authService.swift */; };
 		58BFB6ED1F72F7DE009EDAF6 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */; };
 		58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */; };
 		58BFB6F01F72F9BE009EDAF6 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D1DC321F71868F008436F3 /* SWRevealViewController.m */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		3E26FC36067E02DD3C90AB82 /* Pods-smackapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smackapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-smackapp/Pods-smackapp.release.xcconfig"; sourceTree = "<group>"; };
+		58AE94891F77A9A200D5E9DC /* authService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authService.swift; sourceTree = "<group>"; };
 		58BFB6EC1F72F7DE009EDAF6 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		58BFB6EE1F72F7F1009EDAF6 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		58BFB6F31F72FF10009EDAF6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 				5C85EB8448C87CBA4DFDC314 /* Pods_smackapp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58AE94871F77A97800D5E9DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				58AE94891F77A9A200D5E9DC /* authService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		58BFB6E81F72F760009EDAF6 /* Controller */ = {
@@ -126,6 +136,7 @@
 		58D1DC1C1F71501C008436F3 /* smackapp */ = {
 			isa = PBXGroup;
 			children = (
+				58AE94871F77A97800D5E9DC /* Services */,
 				58BFB6F51F768F85009EDAF6 /* utilities */,
 				58BFB6EB1F72F7BA009EDAF6 /* Model.1 */,
 				58BFB6EA1F72F7A6009EDAF6 /* View.1 */,
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58BFB6ED1F72F7DE009EDAF6 /* ChatVC.swift in Sources */,
+				58AE948A1F77A9A300D5E9DC /* authService.swift in Sources */,
 				58BFB6EF1F72F7F1009EDAF6 /* ChannelVC.swift in Sources */,
 				58BFB6FB1F7698A0009EDAF6 /* createAccountVC.swift in Sources */,
 				58BFB6F41F72FF10009EDAF6 /* GradientView.swift in Sources */,
